@@ -1,0 +1,16 @@
+Med\AdBundle\Entity\Region:
+    type:  entity
+    table: Med_region
+    fields:
+       id:
+           type: integer
+           id: true
+           generator:
+               strategy: AUTO
+       nom:
+           type: string
+    oneToMany:
+      Ville:
+            targetEntity: Ville
+            mappedBy: Region
+            cascade: ["persist"]

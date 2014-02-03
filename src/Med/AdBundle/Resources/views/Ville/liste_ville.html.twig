@@ -1,0 +1,11 @@
+
+
+    <select class="form-control">
+
+        {% for entity in entities %}
+          {% if  loop.first  %} -  <option value="-1" selected>  -------- Toutes les villes  --------</option>
+           {% endif %}
+        <option>{{ entity.nom}}</option>
+        {% endfor %}
+    </select>
+

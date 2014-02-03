@@ -1,0 +1,114 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+
+<div class="row user-infos cyruxx">
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Inscription</h3>
+            </div>
+            <div class="panel-body">
+
+    <form action="action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="post" class="form" role="form">
+
+                <div class="row">
+
+
+                    <div class="col-xs-4 col-md-4">
+                        {{ form_label(form.civilite) }}
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        {{ form_widget(form.civilite,{'attr': {'class': 'form-control'}}) }}
+                    </div>
+
+                    <div class="col-xs-4 col-md-4">
+                        {{ form_label(form.username) }}
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        {{ form_widget(form.username,{'attr': {'class': 'form-control'}}) }}
+                    </div>
+
+                    <div class="col-xs-4 col-md-4">
+                        {{ form_label(form.nom) }}
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        {{ form_widget(form.nom,{'attr': {'class': 'form-control'}}) }}
+                    </div>
+
+                    <div class="col-xs-4 col-md-4">
+                        {{ form_label(form.prenom) }}
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        {{ form_widget(form.prenom,{'attr': {'class': 'form-control'}}) }}
+                    </div>
+
+                    <div class="col-xs-4 col-md-4">
+                        {{ form_label(form.plainPassword.first) }}
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        {{ form_widget(form.plainPassword.first,{'attr': {'class': 'form-control'}}) }}
+                    </div>
+
+
+                    <div class="col-xs-4 col-md-4">
+                        {{ form_label(form.plainPassword.second) }}
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        {{ form_widget(form.plainPassword.second,{'attr': {'class': 'form-control'}}) }}
+                    </div>
+
+
+                    <div class="col-xs-4 col-md-4">
+                        {{ form_label(form.adresse) }}
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        {{ form_widget(form.adresse,{'attr': {'class': 'form-control'}}) }}
+                    </div>
+
+
+                    <div class="col-xs-4 col-md-4">
+                        {{ form_label(form.ville) }}
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        {{ form_widget(form.ville,{'attr': {'class': 'form-control'}}) }}
+                    </div>
+
+                    <div class="col-xs-4 col-md-4">
+                        {{ form_label(form.code_postal) }}
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        {{ form_widget(form.code_postal,{'attr': {'class': 'form-control'}}) }}
+                    </div>
+
+                    <div class="col-xs-4 col-md-4">
+                        {{ form_label(form.telephone) }}
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        {{ form_widget(form.telephone,{'attr': {'class': 'form-control'}}) }}
+                    </div>
+
+                </div>
+<br/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">
+            S'inscrire </button>
+    </form>
+
+
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-sm btn-primary" type="button"
+                        data-toggle="tooltip"
+                        data-original-title="Send message to user"><i class="glyphicon glyphicon-envelope"></i></button>
+                        <span class="pull-right">
+                            <button class="btn btn-sm btn-warning" type="button"
+                                    data-toggle="tooltip"
+                                    data-original-title="Edit this user"><i class="glyphicon glyphicon-edit"></i></button>
+                            <button class="btn btn-sm btn-danger" type="button"
+                                    data-toggle="tooltip"
+                                    data-original-title="Remove this user"><i class="glyphicon glyphicon-remove"></i></button>
+                        </span>
+            </div>
+        </div>
+    </div>
+</div>
+

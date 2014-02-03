@@ -1,0 +1,31 @@
+<div class="row">
+
+
+        {{ form_start(form) }}
+
+    <div class="ui-widget">      <div class="col-md-3">
+            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+            {{ form_widget(form.titre,{'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+
+    <div class="col-md-3">
+            {{ form_widget(form.Ville ,{'attr': {'class': 'form-control'}}) }}
+
+        </div>
+
+        <div class="col-md-3">
+            {{ form_widget(form.Categorie ,{'attr': {'class': 'form-control'}}) }}
+        </div>
+    <div class="col-md-3">
+
+
+
+        {{ form_widget(form.submit ,{'attr': {'class': 'btn btn-default btn-success'}}) }}
+
+    </div>
+
+    {{ form_end(form) }}
+
+
+</div>

@@ -1,0 +1,32 @@
+med_ad:
+    resource: "@MedAdBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+annonces:
+    resource: "@MedAdBundle/Controller"
+    type:     annotation
+
+
+med_user:
+    resource: "@MedUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+fos_user_security:
+    resource: "@MedUserBundle/Resources/config/routing/security.xml"
+
+fos_user_profile:
+    resource: "@MedUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+fos_user_register:
+    resource: "@MedUserBundle/Resources/config/routing/registration.xml"
+    prefix: /inscription
+
+fos_user_resetting:
+    resource: "@MedUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@MedUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile

@@ -1,0 +1,9 @@
+
+<select class="form-control">
+    {% for categorie in categories %}
+    {% if  loop.first  %} -  <option value="-1" selected>  ------ Toutes  les catégories  --------</option>
+    {% endif %}
+        <option>{{ categorie.nom}}</option>
+    {% endfor %}
+</select>
+

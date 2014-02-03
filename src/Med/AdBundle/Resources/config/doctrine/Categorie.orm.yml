@@ -1,0 +1,15 @@
+Med\AdBundle\Entity\Categorie:
+    type:  entity
+    table: Med_categorie
+    fields:
+       id:
+           type: integer
+           id: true
+           generator:
+               strategy: AUTO
+       nom:
+           type: string
+    oneToMany:
+      Annonce:
+            targetEntity: Annonce
+            mappedBy: Categorie

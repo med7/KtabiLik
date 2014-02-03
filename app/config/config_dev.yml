@@ -34,3 +34,10 @@ assetic:
 
 #swiftmailer:
 #    delivery_address: me@example.com
+
+bazinga_faker: ~
+
+swiftmailer:
+      transport: gmail
+      username: med.oujda@gmail.com
+      password: mohammed.91

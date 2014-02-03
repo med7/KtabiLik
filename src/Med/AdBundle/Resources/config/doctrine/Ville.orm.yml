@@ -1,0 +1,31 @@
+Med\AdBundle\Entity\Ville:
+    type:  entity
+    table: Med_ville
+    fields:
+       id:
+           type: integer
+           id: true
+           generator:
+               strategy: AUTO
+       nom:
+           type: string
+       longitude:
+           type: float
+           nullable: true
+       latitude:
+           type: float
+           nullable: true
+    oneToMany:
+      Annonce:
+            targetEntity: Annonce
+            mappedBy: Ville
+      User:
+            targetEntity: Med\UserBundle\Entity\User
+            mappedBy: Ville
+    manyToOne:
+      Region:
+          targetEntity: Region
+          inversedBy: Ville
+          joinColumn:
+              name: region_id
+              referencedColumnName: id

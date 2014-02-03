@@ -25,7 +25,10 @@
         "nelmio/api-doc-bundle": "~2.4",
         "willdurand/rest-extra-bundle": "@stable",
         "friendsofsymfony/user-bundle": "~2.0@dev",
-        "willdurand/faker-bundle": "@stable"
+        "willdurand/faker-bundle": "@stable",
+        "doctrine/doctrine-fixtures-bundle": "dev-master",
+        "knplabs/knp-components": "~1.2@dev",
+        "knplabs/knp-paginator-bundle": "~2.3@dev"
     },
     "scripts": {
         "post-install-cmd": [
